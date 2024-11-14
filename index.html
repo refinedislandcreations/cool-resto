@@ -13,5 +13,38 @@ blocks:
    image: /images/temp.jpg
    image-position:
    image-alt:
+ - _id: text-image
+   pre-title: We can't wait to meet you
+   title: Find us here
+   paragraph: Nestled in the heart of the city, Bienvenido offers a cozy escape with vibrant, authentic flavors just steps away from the bustling streets. Located within walking distance of [insert nearby landmark or neighborhood], our restaurant is the perfect spot for both locals and visitors looking to indulge in a welcoming atmosphere and exceptional cuisine.
+   button-url: google.com
+   button-text: Find us
+   image: /images/temp.jpg
+   image-alt:
+   image-position:
 ---
 
+<section>
+  <div class="grid grid-cols-5">
+    <div class="col-span-3 relative min-h-[80vh]">
+      <img src="{{ header.image }}" class="absolute object-cover right-0 top-0 bottom-0 left-0 w-full h-full" style="object-position: {{header.image-position}};" alt="{{header.image-alt}}">
+      <div class="flex flex-col h-full justify-between">
+          <div class="text-center">
+            <p> Call to action </p>
+          </div>
+          <div>
+            <p>lorem lorem lorem</p>
+          </div>
+      </div>
+    </div>
+    <div class="col-span-2 flex flex-col justify-between">
+      <div>
+        <p>Always by your side</p>
+      </div>
+      <div>
+        <p> Lorem lorem lorem </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quod rerum quasi, quo aspernatur totam molestiae aut, vero maiores laboriosam iure veniam fuga similique. Sequi fuga delectus perspiciatis excepturi perferendis.</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,12 @@
+dish:
+ - order: 1
+   name: Bikram Hot Yoga
+   image: /images/image-8.jpg
+   image-alt:
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem iusto ea expedita.
+ - order: 2
+   name: Mandala Yoga
+   image: /images/image-3.jpg
+   image-alt:
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem iusto ea expedita.
+   
