@@ -8,8 +8,8 @@ module.exports = {
     ],
     theme: {
       fontFamily: {
-        'serif': ['Lora', 'serif'],
-        'sans-serif': ['Montserrat', 'sans-serif'],
+        'serif': ['Playfair Display', 'serif'],
+        'sans-serif': ['Raleway', 'sans-serif'],
       },
       fontSize: {
         xs: ['0.75rem', '1.2'],
