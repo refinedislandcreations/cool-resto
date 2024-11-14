@@ -1,0 +1,68 @@
+/* ----------- Import Tailwind -----*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+    
+
+html {
+    scroll-behavior: smooth;
+      }
+
+
+/* For regular laptops and smaller screens */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 0.9rem;
+  line-height: 30px;
+  letter-spacing: -0.025em;
+  max-width: 100%; /* Allow it to expand to the full width of the screen */
+  background-color: var(--base-color);  
+  color: var(--featured-color);
+    @apply leading-none
+
+}
+
+
+p {
+    @apply leading-normal
+}
+
+/* For larger screens like flatscreen TVs */
+@media screen and (min-width: 1600px) {
+    body {
+        max-width: 1600px; /* Set a specific max-width for larger screens */
+        margin: 0 auto; /* Center the content horizontally */
+    }
+}
+
+.heading-font {
+    font-family: "Oranienbaum", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+ 
+.sub-heading-font {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.5rem;
+}  
+
+.button {
+  background-color: var(--featured-color);
+  color: var(--base-color);   
+  text-transform: uppercase;
+}
+
+.button-footer {
+  background-color: var(--base-color);  
+  color: var(--featured-color);  
+  text-transform: uppercase;
+}
+
+.text-light {
+  color:var(--base-color);  
+}
