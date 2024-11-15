@@ -551,6 +551,9 @@ video {
 .min-h-40 {
   min-height: 40vh;
 }
+.min-h-50 {
+  min-height: 50vh;
+}
 .min-h-60 {
   min-height: 60vh;
 }
@@ -568,9 +571,6 @@ video {
 }
 .min-h-screen {
   min-height: 100vh;
-}
-.min-h-50 {
-  min-height: 50vh;
 }
 .w-full {
   width: 100%;
@@ -604,9 +604,6 @@ video {
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -678,14 +675,8 @@ video {
 .border-b {
   border-bottom-width: 1px;
 }
-.border-l {
-  border-left-width: 1px;
-}
 .border-l-0 {
   border-left-width: 0px;
-}
-.border-r {
-  border-right-width: 1px;
 }
 .border-t {
   border-top-width: 1px;
@@ -915,32 +906,32 @@ p {
   .sm\:grid {
     display: grid;
   }
-  .sm\:min-h-\[75vh\] {
-    min-height: 75vh;
+  .sm\:min-h-40 {
+    min-height: 40vh;
   }
   .sm\:min-h-80 {
     min-height: 80vh;
   }
+  .sm\:min-h-\[75vh\] {
+    min-height: 75vh;
+  }
   .sm\:min-h-\[80vh\] {
     min-height: 80vh;
-  }
-  .sm\:min-h-40 {
-    min-height: 40vh;
   }
   .sm\:max-w-md {
     max-width: 28rem;
   }
-  .sm\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
   .sm\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
-  .sm\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .sm\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
   .sm\:flex-col {
     flex-direction: column;
@@ -951,14 +942,14 @@ p {
   .sm\:border-b {
     border-bottom-width: 1px;
   }
+  .sm\:border-l {
+    border-left-width: 1px;
+  }
   .sm\:border-r {
     border-right-width: 1px;
   }
   .sm\:border-t-0 {
     border-top-width: 0px;
-  }
-  .sm\:border-l {
-    border-left-width: 1px;
   }
   .sm\:border-featured {
     border-color: var(--featured-color);
@@ -974,10 +965,6 @@ p {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
-  .sm\:py-5 {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-  }
   .sm\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -986,17 +973,21 @@ p {
     padding-top: 0px;
     padding-bottom: 0px;
   }
+  .sm\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
   .sm\:pb-0 {
     padding-bottom: 0px;
   }
   .sm\:pb-8 {
     padding-bottom: 2rem;
   }
-  .sm\:pt-5 {
-    padding-top: 1.25rem;
-  }
   .sm\:pt-0 {
     padding-top: 0px;
+  }
+  .sm\:pt-5 {
+    padding-top: 1.25rem;
   }
   .sm\:text-left {
     text-align: left;
