@@ -12,37 +12,7 @@ blocks:
    image-position:
    image-alt:
    title: Lunch
+ - _id: menu-with-price
 ---
 
-
-<div>
-  <button>All</button>
-  <button>Pescatarian</button>
-  <button>Vegetarian</button>
-  <button>Vegan</button>
-</div>
-
-<section class="container mx-auto max-w-md mt-[10%]">
-  {% for item in site.data.dishes.dish %}
-     <div class="{% for cat in item.categories %} {{cat}} {% endfor %}">   
-    <div class="flex flex-row justify-between border-b border-featured">
-      <div>
-        <p>{{ item.name }} {% for cat in item.categories %}
-            {% if cat == 'vegan' %} vegan {% endif %}
-            {% if cat == 'vegetarian' %} vegetarian {% endif %}
-          {% endfor %}
-        </p>
-
-      </div>
-      <div>
-        <p> {{ item.price }}</p>
-      </div>
-    </div>
-    <div class="pb-5">
-      <p> {{ item.description }}</p>
-     
-    </div>
-</div>
-  {% endfor %}
-</section>
 

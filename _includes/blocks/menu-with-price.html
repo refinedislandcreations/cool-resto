@@ -1,0 +1,32 @@
+
+
+
+<section class="container mx-auto max-w-md mt-[10%]">
+  <div class="flex flex-row justify-center gap-5 mb-[10%]">
+    <button class="filterbutton font-semibold underline" data-filter="all">All</button>
+    <button class="filterbutton" data-filter="pescatarian">Pescatarian</button>
+    <button class="filterbutton" data-filter="vegetarian">Vegetarian</button>
+    <button class="filterbutton" data-filter="vegan">Vegan</button>
+  </div>
+  {% for item in site.data.dishes.dish %}
+     <div class="filterdish all {% for cat in item.categories %} {{cat}} {% endfor %}">   
+    <div class="flex flex-row justify-between border-b border-featured">
+      <div>
+        <p>{{ item.name }} {% for cat in item.categories %}
+            {% if cat == 'vegan' %} vegan {% endif %}
+            {% if cat == 'vegetarian' %} vegetarian {% endif %}
+          {% endfor %}
+        </p>
+
+      </div>
+      <div>
+        <p> {{ item.price }}</p>
+      </div>
+    </div>
+    <div class="pb-5">
+      <p> {{ item.description }}</p>
+     
+    </div>
+</div>
+  {% endfor %}
+</section>
