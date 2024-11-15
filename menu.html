@@ -1,0 +1,30 @@
+---
+layout: default
+title: Menu
+header:
+ image: /images/temp.jpg
+ image-position:
+ image-alt:
+ title: Menu
+blocks:
+ - _id: half-width-title
+   image: /images/temp.jpg
+   image-position:
+   image-alt:
+   title: Lunch
+---
+
+<section class="container mx-auto">
+  {% for item in site.data.dishes.dish %}
+    <div class="flex flex-row justify-between">
+      <div>
+        {{ item.name }}
+      </div>
+      <div>
+        {{ item.price }}
+      </div>
+    </div>
+    
+  {% endfor %}
+</section>
+
