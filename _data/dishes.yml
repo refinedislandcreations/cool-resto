@@ -1,36 +1,125 @@
 dish:
- - name: Paella de Mariscos
-   image: /images/temp.jpg
+ - name: Primero Platos
+   image: /images/dish-1.png
    image-alt:
    image-position:
-   description: Our signature Paella de Mariscos is a celebration of coastal flavors and vibrant Spanish tradition. This dish is crafted with tender shrimp, succulent mussels, and fresh clams, all simmered to perfection in a saffron-infused rice.
-   price: 75k
+   description: A selection of bite-sized creations blending Spanish and Asian flavors. From delicate seafood to vibrant vegetable bites, each offers a taste of our culinary fusion, perfect for sharing or savoring on your own.
+   price: $38
+   categories:
+    -  
+ - name: Flor de Oro
+   image: /images/dish-2.png
+   image-alt:
+   image-position:
+   description: Flor de Oro is a vegan masterpiece of saffron-infused bites with a coconut-lemongrass foam and colorful edible flowers. Bright and fragrant, it’s a garden of flavors and textures that elevates plant-based dining to an art form.
+   price: $42
    categories:
     - vegan
     - vegetarian
- - name: Gambas al Ajillo
-   image: /images/temp.jpg
+ - name: El Descubrimiento
+   image: /images/dish-3.png
    image-alt:
    image-position:
-   description: Juicy shrimp sautéed in olive oil, garlic, and a touch of red chili for a hint of heat. This sizzling classic is finished with fresh parsley and a dash of lemon, served with warm crusty bread for dipping. A simple yet bold appetizer that captures the essence of Spain’s vibrant tapas culture.
-   price: 75k
-   categories:
-    - vegan
- - name: Pollo a la Parilla
-   image: /images/temp.jpg
-   image-alt:
-   image-position:
-   description: Tender, marinated grilled chicken infused with smoky paprika, fresh garlic, and herbs, served with roasted vegetables and a side of saffron-infused rice. This dish is a hearty and flavorful take on a traditional Spanish favorite, perfect for any appetite.
-   price: 75k
+   description: El Descubrimiento features a fresh fish dish served under a domed lid, unveiling delicate flavors and a light, aromatic broth. Accompanied by seasonal vegetables, it’s a pescatarian experience that’s as visually stunning as it is delicious.
+   price: $55
    categories:
     - pescatarian
- - name: Patatas Bravas
-   image: /images/temp.jpg
+ - name: Huevo del Mar
+   image: /images/dish-4.png
    image-alt:
    image-position:
-   description: Crispy, golden potatoes topped with a smoky tomato sauce and a drizzle of creamy aioli. A must-have Spanish tapa that’s deliciously savory with a hint of spice, perfect for sharing or enjoying solo.
- - name: Ensalada de Naranja y Hinojo
-   image: /images/temp.jpg
+   description: Huevo del Mar brings together a delicate egg and raw fish in a beautifully balanced dish. The richness of the egg complements the freshness of the fish, creating a harmony of textures and flavors that’s both bold and elegant.
+   price: $48
+   categories:
+    - pescatarian
+ - name: Seta Dorada
+   image: /images/dish-5.png
    image-alt:
    image-position:
-   description: A refreshing salad of sliced oranges, thinly shaved fennel, and arugula, drizzled with olive oil and sprinkled with sea salt. This light and bright dish is topped with Marcona almonds for a touch of crunch, capturing a unique blend of flavors that’s both sweet and tangy.
+   description: Seta Dorada is a rich and savory vegan dish featuring earthy mushrooms surrounding a creamy, golden center. The velvety, plant-based cream offers a perfect contrast to the mushrooms' natural umami, creating a dish that's both comforting and refined.
+   price: $48
+   categories:
+    - vegan
+    - vegetarian
+ - name: Tartar de Atún
+   image: /images/dish-6.png
+   image-alt:
+   image-position:
+   description: A vibrant tuna tartare with a tangy citrus dressing, delicate avocado, and a hint of chili for a refreshing yet bold start to your meal.
+   price: $45
+   categories:
+    - pescatarian
+ - name: Piquillos Rellenos
+   image: /images/dish-7.png
+   image-alt:
+   image-position:
+   description: Piquillo peppers stuffed with a savory blend of mushrooms and rice, drizzled with a rich tomato sauce for a flavorful bite that’s both smoky and sweet.
+   price: $38
+   categories:
+    - vegan
+    - vegetarian
+ - name: Lomo de Res
+   image: /images/dish-8.png
+   image-alt:
+   image-position:
+   description: A tender cut of beef tenderloin served with roasted root vegetables, finished with a red wine reduction for a dish that’s both indulgent and hearty.
+   price: $65
+   categories:
+    - 
+ - name: Risotto de Mariscos
+   image: /images/dish-9.png
+   image-alt:
+   image-position:
+   description: Creamy seafood risotto, featuring a medley of fresh shellfish and fish, perfectly balanced with saffron and a touch of lemon zest.
+   price: $50
+   categories:
+    - pescatarian
+ - name: Tarta de Limón
+   image: /images/dish-10.png
+   image-alt:
+   image-position:
+   description: A zesty lemon tart with a buttery crust, topped with a dollop of whipped cream, and garnished with a sprinkle of lemon zest.
+   price: $18
+   categories:
+    - dessert
+ - name: Helado de Coco
+   image: /images/dish-11.png
+   image-alt:
+   image-position:
+   description: Creamy coconut ice cream, made with fresh coconut milk, served with toasted coconut flakes for a refreshing and indulgent finish to your meal.
+   price: $12
+   categories:
+    - vegan
+    - dessert
+ - name: Limonada Fresca
+   image: /images/drinks-1.png
+   image-alt:
+   image-position:
+   description: A refreshing homemade lemonade with a hint of mint, served chilled for a crisp and revitalizing experience.
+   price: $8
+   categories:
+    - nonalcoholic
+ - name: Sangría Roja
+   image: /images/drinks-2.png
+   image-alt:
+   image-position:
+   description: A traditional Spanish red sangria made with a mix of red wine, citrus fruits, and a splash of brandy for a fruity, spiced drink that’s perfect for sharing.
+   price: $12
+   categories:
+    - alcoholic
+ - name: Cóctel de Pepino y Menta
+   image: /images/drinks-3.png
+   image-alt:
+   image-position:
+   description: A refreshing cucumber and mint cocktail, with gin and a dash of lime, creating a cooling drink perfect for warm days.
+   price: $14
+   categories:
+    - alcoholic
+ - name: Margarita de Frambuesa
+   image: /images/drinks-4.png
+   image-alt:
+   image-position:
+   description: A twist on the classic margarita, using fresh raspberries for a sweet, tart, and vibrant flavor, balanced with tequila and lime juice.
+   price: $16
+   categories:
+    - alcoholic
