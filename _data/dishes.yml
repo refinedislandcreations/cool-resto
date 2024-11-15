@@ -1,12 +1,26 @@
 dish:
- - order: 1
-   name: Bikram Hot Yoga
-   image: /images/image-8.jpg
+ - name: Paella de Mariscos
+   image: /images/temp.jpg
    image-alt:
-   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem iusto ea expedita.
- - order: 2
-   name: Mandala Yoga
-   image: /images/image-3.jpg
+   image-position:
+   description: Our signature Paella de Mariscos is a celebration of coastal flavors and vibrant Spanish tradition. This dish is crafted with tender shrimp, succulent mussels, and fresh clams, all simmered to perfection in a saffron-infused rice.
+ - name: Gambas al Ajillo
+   image: /images/temp.jpg
    image-alt:
-   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem iusto ea expedita.
-   
+   image-position:
+   description: Juicy shrimp sautéed in olive oil, garlic, and a touch of red chili for a hint of heat. This sizzling classic is finished with fresh parsley and a dash of lemon, served with warm crusty bread for dipping. A simple yet bold appetizer that captures the essence of Spain’s vibrant tapas culture.
+ - name: Pollo a la Parilla
+   image: /images/temp.jpg
+   image-alt:
+   image-position:
+   description: Tender, marinated grilled chicken infused with smoky paprika, fresh garlic, and herbs, served with roasted vegetables and a side of saffron-infused rice. This dish is a hearty and flavorful take on a traditional Spanish favorite, perfect for any appetite.
+ - name: Patatas Bravas
+   image: /images/temp.jpg
+   image-alt:
+   image-position:
+   description: Crispy, golden potatoes topped with a smoky tomato sauce and a drizzle of creamy aioli. A must-have Spanish tapa that’s deliciously savory with a hint of spice, perfect for sharing or enjoying solo.
+ - name: Ensalada de Naranja y Hinojo
+   image: /images/temp.jpg
+   image-alt:
+   image-position:
+   description: A refreshing salad of sliced oranges, thinly shaved fennel, and arugula, drizzled with olive oil and sprinkled with sea salt. This light and bright dish is topped with Marcona almonds for a touch of crunch, capturing a unique blend of flavors that’s both sweet and tangy.

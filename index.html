@@ -7,6 +7,41 @@ header:
  image-alt:
  title: Bienvenido
 blocks:
+ - _id: three-column-text-image
+   left-upper-text: Step into a warm, welcoming atmosphere inspired by the rich flavors and vibrant energy of Spain.
+   left-lower-text: Each dish tells a story. Our chefs draw from Spain’s diverse regions, blending fresh ingredients with traditional recipes that have been passed down through generations. From the coasts to the countryside, we capture the essence of Spain’s rich culinary heritage, adding a contemporary twist to timeless flavors.
+   image: /images/temp.jpg
+   image-position:
+   image-alt:
+   right-text: Bienvenido is more than just a place to eat – it’s a destination where friends, families, and food lovers can gather and savor the moment. We take pride in crafting not just meals but memorable experiences, ensuring every visit feels like a getaway to the heart of Spain.
+ - _id: extra-big-dish-block  
+ - _id: three-categories
+   menu-categories:
+   - title: Lunch
+     image: /images/temp.jpg
+     image-position:
+     image-alt:
+     description: Step away from the everyday hustle and join us for a midday escape. Our lunch menu offers a curated selection of light yet satisfying dishes, from fresh salads and flavorful tapas to classic Spanish sandwiches and hearty entrées. Whether you’re looking for a quick bite or a leisurely lunch, each dish is crafted to bring you the vibrant, authentic flavors of Spain.
+   - title: Dinner
+     image: /images/temp.jpg
+     image-position:
+     image-alt:
+     description: As the sun sets, Bienvenido transforms into a cozy dining destination, perfect for unwinding and sharing a memorable meal. Our dinner menu features a selection of thoughtfully prepared Spanish-inspired dishes, from savory paellas to expertly grilled meats and seafood. Indulge in a culinary journey through Spain’s rich flavors, where each bite is crafted to bring warmth and satisfaction to your evening.
+   - title: Drinks
+     image: /images/temp.jpg
+     image-position:
+     image-alt:
+     description: Raise a glass to good times with our carefully curated drink menu, featuring Spanish wines, handcrafted cocktails, and refreshing sangrias. Our wine list highlights selections from renowned Spanish vineyards, while our cocktails are infused with local and seasonal ingredients. Whether you’re sipping on a classic Rioja or enjoying a signature gin and tonic, our drink offerings perfectly complement the flavors of your meal and add a special touch to any occasion.
+   - _id: big-image-small-text
+     image: /images/temp.jpg
+     image-position:
+     image-alt:
+     centered-text-on-image: The place to be
+     lower-text-on-image: Book a table
+     lower-text-on-image-url:
+     right-side-top-text: Always by your side
+     right-side-bottom-text-heading: Lorem lorem lorem
+     right-side-bottom-text-paragraph: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quod rerum quasi, quo aspernatur totam molestiae aut, vero maiores laboriosam iure veniam fuga similique. Sequi fuga delectus perspiciatis excepturi perferendis.
  - _id: text-above-big-image
    title: Paella de Mariscos
    paragraph: Our signature Paella de Mariscos is a celebration of coastal flavors and vibrant Spanish tradition. This dish is crafted with tender shrimp, succulent mussels, and fresh clams, all simmered to perfection in a saffron-infused rice.
@@ -24,27 +59,4 @@ blocks:
    image-position:
 ---
 
-<section>
-  <div class="grid grid-cols-5">
-    <div class="col-span-3 relative min-h-[80vh]">
-      <img src="{{ header.image }}" class="absolute object-cover right-0 top-0 bottom-0 left-0 w-full h-full" style="object-position: {{header.image-position}};" alt="{{header.image-alt}}">
-      <div class="flex flex-col h-full justify-between">
-          <div class="text-center">
-            <p> Call to action </p>
-          </div>
-          <div>
-            <p>lorem lorem lorem</p>
-          </div>
-      </div>
-    </div>
-    <div class="col-span-2 flex flex-col justify-between">
-      <div>
-        <p>Always by your side</p>
-      </div>
-      <div>
-        <p> Lorem lorem lorem </p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quod rerum quasi, quo aspernatur totam molestiae aut, vero maiores laboriosam iure veniam fuga similique. Sequi fuga delectus perspiciatis excepturi perferendis.</p>
-      </div>
-    </div>
-  </div>
-</section>
+

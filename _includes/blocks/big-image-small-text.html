@@ -1,0 +1,28 @@
+<section>
+  <div class="grid grid-cols-5">
+    <div class="col-span-3 relative min-h-[80vh]">
+      <img src=" {{block.image}}" class="absolute object-cover right-0 top-0 bottom-0 left-0 w-full h-full" style="object-position: {{block.image-position}};" alt="{{block.image-alt}}">
+      <div class="flex flex-col h-full justify-between">
+          <div class="text-center">
+            <p> {{block.centered-text-on-image}}</p>
+          </div>
+          <div>
+            <a href="{{block.lower-text-on-image-url}}"> {{block.lower-text-on-image}} </a>
+          </div>
+      </div>
+    </div>
+    <div class="col-span-2 flex flex-col justify-between">
+      <div>
+        <p>{{block.right-side-top-text}}</p>
+      </div>
+      <div>
+        <p> {{block.right-side-bottom-text-heading}}  </p>
+        <p> {{block.right-side-bottom-text-paragraph}} </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+ 
