@@ -4,16 +4,26 @@ dish:
    image-alt:
    image-position:
    description: Our signature Paella de Mariscos is a celebration of coastal flavors and vibrant Spanish tradition. This dish is crafted with tender shrimp, succulent mussels, and fresh clams, all simmered to perfection in a saffron-infused rice.
+   price: 75k
+   categories:
+    - vegan
+    - vegetarian
  - name: Gambas al Ajillo
    image: /images/temp.jpg
    image-alt:
    image-position:
    description: Juicy shrimp sautéed in olive oil, garlic, and a touch of red chili for a hint of heat. This sizzling classic is finished with fresh parsley and a dash of lemon, served with warm crusty bread for dipping. A simple yet bold appetizer that captures the essence of Spain’s vibrant tapas culture.
+   price: 75k
+   categories:
+    - vegan
  - name: Pollo a la Parilla
    image: /images/temp.jpg
    image-alt:
    image-position:
    description: Tender, marinated grilled chicken infused with smoky paprika, fresh garlic, and herbs, served with roasted vegetables and a side of saffron-infused rice. This dish is a hearty and flavorful take on a traditional Spanish favorite, perfect for any appetite.
+   price: 75k
+   categories:
+    - pescatarian
  - name: Patatas Bravas
    image: /images/temp.jpg
    image-alt:
