@@ -442,8 +442,8 @@ video {
 .relative {
   position: relative;
 }
-.-left-14 {
-  left: -3.5rem;
+.-left-7 {
+  left: -1.75rem;
 }
 .bottom-0 {
   bottom: 0px;
@@ -469,6 +469,9 @@ video {
 .z-10 {
   z-index: 10;
 }
+.order-2 {
+  order: 2;
+}
 .order-first {
   order: -9999;
 }
@@ -493,12 +496,19 @@ video {
 .col-span-full {
   grid-column: 1 / -1;
 }
+.row-span-2 {
+  grid-row: span 2 / span 2;
+}
 .-m-px {
   margin: -1px;
 }
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .mb-2 {
   margin-bottom: 0.5rem;
@@ -511,6 +521,9 @@ video {
 }
 .mb-\[10\%\] {
   margin-bottom: 10%;
+}
+.mb-\[15\%\] {
+  margin-bottom: 15%;
 }
 .mt-14 {
   margin-top: 3.5rem;
@@ -557,14 +570,11 @@ video {
 .min-h-60 {
   min-height: 60vh;
 }
-.min-h-80 {
-  min-height: 80vh;
+.min-h-\[20vh\] {
+  min-height: 20vh;
 }
 .min-h-\[40vh\] {
   min-height: 40vh;
-}
-.min-h-\[60vh\] {
-  min-height: 60vh;
 }
 .min-h-\[80vh\] {
   min-height: 80vh;
@@ -598,9 +608,6 @@ video {
 }
 .basis-full {
   flex-basis: 100%;
-}
-.grid-cols-12 {
-  grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -660,6 +667,9 @@ video {
 .divide-featured > :not([hidden]) ~ :not([hidden]) {
   border-color: var(--featured-color);
 }
+.self-start {
+  align-self: flex-start;
+}
 .self-end {
   align-self: flex-end;
 }
@@ -707,13 +717,13 @@ video {
   padding-left: 3rem;
   padding-right: 3rem;
 }
-.px-14 {
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
-}
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 .px-8 {
   padding-left: 2rem;
@@ -731,25 +741,28 @@ video {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
 .py-7 {
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
 }
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 .pb-10 {
   padding-bottom: 2.5rem;
-}
-.pb-14 {
-  padding-bottom: 3.5rem;
 }
 .pb-2 {
   padding-bottom: 0.5rem;
 }
 .pb-5 {
   padding-bottom: 1.25rem;
+}
+.pb-7 {
+  padding-bottom: 1.75rem;
+}
+.pl-2 {
+  padding-left: 0.5rem;
 }
 .pl-8 {
   padding-left: 2rem;
@@ -768,9 +781,6 @@ video {
 }
 .pt-8 {
   padding-top: 2rem;
-}
-.pb-7 {
-  padding-bottom: 1.75rem;
 }
 .text-center {
   text-align: center;
@@ -793,8 +803,12 @@ video {
   font-size: 3rem;
   line-height: 1;
 }
-.text-9xl {
-  font-size: 8rem;
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+.text-7xl {
+  font-size: 4.5rem;
   line-height: 1;
 }
 .text-base {
@@ -892,11 +906,23 @@ p {
 }
 
 @media (min-width: 640px) {
+  .sm\:-left-14 {
+    left: -3.5rem;
+  }
+  .sm\:-order-1 {
+    order: -1;
+  }
+  .sm\:order-1 {
+    order: 1;
+  }
   .sm\:order-first {
     order: -9999;
   }
   .sm\:order-last {
     order: 9999;
+  }
+  .sm\:col-span-2 {
+    grid-column: span 2 / span 2;
   }
   .sm\:col-span-3 {
     grid-column: span 3 / span 3;
@@ -920,8 +946,17 @@ p {
   .sm\:min-h-40 {
     min-height: 40vh;
   }
+  .sm\:min-h-50 {
+    min-height: 50vh;
+  }
   .sm\:min-h-80 {
     min-height: 80vh;
+  }
+  .sm\:min-h-\[40vh\] {
+    min-height: 40vh;
+  }
+  .sm\:min-h-\[60vh\] {
+    min-height: 60vh;
   }
   .sm\:min-h-\[75vh\] {
     min-height: 75vh;
@@ -972,6 +1007,10 @@ p {
     padding-left: 0px;
     padding-right: 0px;
   }
+  .sm\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
   .sm\:px-2 {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -984,16 +1023,19 @@ p {
     padding-top: 0px;
     padding-bottom: 0px;
   }
-  .sm\:py-5 {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-  }
   .sm\:py-14 {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
   }
+  .sm\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
   .sm\:pb-0 {
     padding-bottom: 0px;
+  }
+  .sm\:pb-14 {
+    padding-bottom: 3.5rem;
   }
   .sm\:pb-8 {
     padding-bottom: 2rem;
@@ -1003,9 +1045,6 @@ p {
   }
   .sm\:pt-5 {
     padding-top: 1.25rem;
-  }
-  .sm\:pb-14 {
-    padding-bottom: 3.5rem;
   }
   .sm\:text-left {
     text-align: left;
@@ -1020,6 +1059,9 @@ p {
 }
 
 @media (min-width: 768px) {
+  .md\:min-h-80 {
+    min-height: 80vh;
+  }
   .md\:min-h-\[40vh\] {
     min-height: 40vh;
   }

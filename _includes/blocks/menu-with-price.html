@@ -1,7 +1,7 @@
 
 
 
-<section class="container mx-auto max-w-md mt-[10%]" id="section-{{forloop.index}}">
+<section class="container mx-auto max-w-md mt-[10%] px-5 mb-[15%]" id="section-{{forloop.index}}">
   <div class="flex flex-row justify-center gap-5 mb-[10%]">
     <button class="filterbutton font-semibold underline" data-filter="all">All</button>
     {% for item in block.filter %}
@@ -14,8 +14,9 @@
     <div class="flex flex-row justify-between border-b border-featured">
       <div>
         <p>{{ item.name }} {% for cat in item.categories %}
-            {% if cat == 'vegan' %} vegan {% endif %}
-            {% if cat == 'vegetarian' %} vegetarian {% endif %}
+            {% if cat == 'vegan' %} <i class="fa-solid fa-leaf pl-2"></i> {% endif %}
+            {% if cat == 'vegetarian' %} <i class="fa-solid fa-carrot pl-2"></i> {% endif %}
+            {% if cat == 'pescatarian' %} <i class="fa-solid fa-fish pl-2"></i> {% endif %}
           {% endfor %}
         </p>
 
