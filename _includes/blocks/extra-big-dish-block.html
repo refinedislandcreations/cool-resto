@@ -1,11 +1,11 @@
 <!------big image small text-------->
-<section class="container mx-auto px-5 py-14">
+<section class="container mx-auto px-5 py-7 sm:py-14">
   <div class="sm:flex flex-row justify-between gap-5 pb-2">
     <div class="shrink-0 self-end">
-      <h3 class="font-serif text-4xl">{{site.data.dishes.dish[0].name}}</h3>
+      <h3 class="font-serif text-4xl pb-2 sm:pb-0">{{site.data.dishes.dish[0].name}}</h3>
     </div>
     <div class="max-w-md">
-      <p class="py-5 sm:py-0"> {{site.data.dishes.dish[0].description}} </p>
+      <p class="py-2 sm:py-0"> {{site.data.dishes.dish[0].description}} </p>
     </div>
   </div>
   <div class="relative min-h-40 sm:min-h-[80vh] mb-2">
@@ -14,7 +14,7 @@
 <!----one big three small dishes------>
   <div class="sm:grid sm:grid-cols-5 gap-2">
     <div class="col-span-2">
-      <div class="relative min-h-[80vh]">
+      <div class="relative min-h-40 sm:min-h-[80vh]">
         <img src="{{ site.data.dishes.dish[1].image }}" class="absolute object-cover right-0 top-0 bottom-0 left-0 w-full h-full" style="object-position: {{site.data.dishes.dish[1].image-position}};" alt="{{site.data.dishes.dish[1].image-alt}}">
       </div>
 
