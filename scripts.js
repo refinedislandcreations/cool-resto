@@ -1,3 +1,4 @@
+/*
 const filterButtons = document.querySelectorAll(".filterbutton")
 const filterDishes = document.querySelectorAll(".filterdish")
 console.log(filterButtons, filterDishes)

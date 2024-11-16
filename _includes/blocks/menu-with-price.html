@@ -1,15 +1,16 @@
 
 
 
-<section class="container mx-auto max-w-md mt-[10%]">
+<section class="container mx-auto max-w-md mt-[10%]" id="section-{{forloop.index}}">
   <div class="flex flex-row justify-center gap-5 mb-[10%]">
     <button class="filterbutton font-semibold underline" data-filter="all">All</button>
-    <button class="filterbutton" data-filter="pescatarian">Pescatarian</button>
-    <button class="filterbutton" data-filter="vegetarian">Vegetarian</button>
-    <button class="filterbutton" data-filter="vegan">Vegan</button>
+    {% for item in block.filter %}
+    <button class="filterbutton" data-filter="{{item | replace:' ','-' }}">{{item}}</button>
+    {% endfor %}
   </div>
-  {% for item in site.data.dishes.dish %}
-     <div class="filterdish all {% for cat in item.categories %} {{cat}} {% endfor %}">   
+  {% assign dishes = site.data.dishes.dish | where_exp: "dish", "dish.mealtime contains block.mealtime" %}
+  {% for item in dishes %}
+     <div class="filterdish all {% for cat in item.categories %} {{cat | replace:' ','-'}} {% endfor %}">   
     <div class="flex flex-row justify-between border-b border-featured">
       <div>
         <p>{{ item.name }} {% for cat in item.categories %}
@@ -30,3 +31,32 @@
 </div>
   {% endfor %}
 </section>
+
+
+<script>
+  const filterButtons{{forloop.index}} = document.querySelectorAll("#section-{{forloop.index}} .filterbutton")
+const filterDishes{{forloop.index}} = document.querySelectorAll("#section-{{forloop.index}} .filterdish")
+
+
+function filterDish{{forloop.index}}() {
+  filterButtons{{forloop.index}}.forEach(button => {
+    button.classList.remove("font-semibold")
+    button.classList.remove("underline")
+  })
+  this.classList.add("font-semibold")
+  this.classList.add("underline")
+  console.log(this.dataset.filter)
+  filterDishes{{forloop.index}}.forEach(dish => {
+    if (dish.classList.contains(this.dataset.filter)){
+      dish.classList.remove("hidden")
+    } else {
+      dish.classList.add("hidden")
+    }
+  })
+}
+
+filterButtons{{forloop.index}}.forEach(button => {
+  
+  button.addEventListener("click", filterDish{{forloop.index}}
+)})
+</script>
