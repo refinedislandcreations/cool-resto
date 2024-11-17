@@ -5,7 +5,7 @@
   <div class="flex flex-row justify-center gap-5 mb-[10%]">
     <button class="filterbutton font-semibold underline" data-filter="all">All</button>
     {% for item in block.filter %}
-    <button class="filterbutton" data-filter="{{item | replace:' ','-' }}">{{item}}</button>
+    <button class="filterbutton" data-filter="{{item | downcase | replace:' ','-' }}">{{item}}</button>
     {% endfor %}
   </div>
   {% assign dishes = site.data.dishes.dish | where_exp: "dish", "dish.mealtime contains block.mealtime" %}
