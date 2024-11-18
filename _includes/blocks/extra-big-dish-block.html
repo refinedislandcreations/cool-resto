@@ -27,10 +27,10 @@
 
     </div>
     <div class="sm:col-span-3 order-2 sm:self-end h-full">
-        <div  class="flex flex-row gap-2">
+        <div  class="flex flex-row gap-2 h-full sm:self-end sm:items-end">
           
           {% for item in site.data.dishes.dish limit:3 offset:2 %}
-          <div class="relative min-h-30 sm:min-h-40 grow">
+          <div class="relative min-h-30 sm:min-h-40 grow flex items-end">
             <img src="{{ item.image }}" class="absolute object-cover right-0 top-0 bottom-0 left-0 w-full h-full" style="object-position: {{item.image-position}};" alt="{{item.image-alt}}">
           </div>
           {% endfor %}
