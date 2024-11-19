@@ -129,7 +129,7 @@ dish:
    mealtime:
     - drinks
    categories:
-    - non-alcoholic
+    - nonalcoholic
  - name: Sangría Roja
    image: /images/drinks-2.png
    image-alt:
