@@ -44,7 +44,7 @@ _options:
     image: true
 
 url: "https://refinedislandcreations.com" # Your main domain
-baseurl: "/casa-seda"  # Optional, add this if you use a subpath on your main domain
+baseurl: 
 plugins:
   - jekyll-sitemap
   
