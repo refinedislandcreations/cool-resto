@@ -105,6 +105,18 @@ _structures:
           image: /uploads/michael-tucker-nqcdfdbauxu-unsplash.jpg
           metadata:
           gallery:
+            image: /images/dinner-banner-img.png
+            icon:
+            icon_color:
+            fit:
+        preview:
+          text:
+          subtext:
+          icon:
+          icon_color:
+          image: /images/drinks.png
+          metadata:
+          gallery:
         tags:
         value:
           _id: text-image
