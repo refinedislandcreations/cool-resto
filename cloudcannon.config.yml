@@ -93,7 +93,7 @@ _inputs:
     cascade: true
 _structures:
   blocks:
-    style: select
+    style: modal
     id_key:
     values:
       - label: Split Banner
